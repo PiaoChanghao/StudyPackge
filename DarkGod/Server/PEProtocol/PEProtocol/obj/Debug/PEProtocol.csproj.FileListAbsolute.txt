@@ -1,0 +1,9 @@
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\bin\Debug\PEProtocol.dll
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\bin\Debug\PEProtocol.pdb
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\bin\Debug\PESocket.dll
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.csproj.CoreCompileInputs.cache
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.csproj.CopyComplete
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.dll
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.pdb
+D:\Unity\课程\DarkGod\Assets\Scripts\Net\PEProtocol.dll
+D:\Unity\课程\DarkGod\Assets\Scripts\Net\PEProtocol.pdb

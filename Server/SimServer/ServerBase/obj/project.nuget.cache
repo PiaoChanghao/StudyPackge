@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "1BSExoHFX3euU6Ssv9QcRv4UuGBnrXGudcfLSklTm/ZZQcfdoE7a3l2xk2iGmXCtnVzu/1sojbTSm/i5W4D1YQ==",
+  "success": true,
+  "projectFilePath": "D:\\Unity\\课程\\Server\\SimServer\\ServerBase\\ServerBase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\piaoc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\piaoc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

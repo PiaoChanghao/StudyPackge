@@ -1,0 +1,11 @@
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\Server.exe.config
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\Server.exe
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\Server.pdb
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\PEProtocol.dll
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\PESocket.dll
+D:\Unity\课程\DarkGod\Server\Server\bin\Debug\PEProtocol.pdb
+D:\Unity\课程\DarkGod\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Unity\课程\DarkGod\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Unity\课程\DarkGod\Server\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Unity\课程\DarkGod\Server\Server\obj\Debug\Server.exe
+D:\Unity\课程\DarkGod\Server\Server\obj\Debug\Server.pdb
