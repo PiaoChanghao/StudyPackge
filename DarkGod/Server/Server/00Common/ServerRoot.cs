@@ -24,12 +24,17 @@ public class ServerRoot
         //数据层TODO
 
         //服务层
-
+        CacheSvc.Instance.init();
         NetSvc.Instance.Init();
 
 
         //业务系统层
         LoginSys.Instance.Init();
 
+    }
+
+    public void Update()
+    {
+        NetSvc.Instance.Update();
     }
 }

@@ -8,13 +8,16 @@
 
 
 using PEProtocol;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NetSvc : MonoBehaviour 
+public class NetSvc : MonoBehaviour
 {
     public static NetSvc Instance = null;
 
-    PENet.PESocket<ClientSession,GameMsg> client = null;
+    private static readonly string obj = "lock";
+    PENet.PESocket<ClientSession, GameMsg> client = null;
+    private Queue<GameMsg> msgQue = new Queue<GameMsg>();
 
     public void InitSvc()
     {
@@ -50,7 +53,7 @@ public class NetSvc : MonoBehaviour
 
     public void SendMsg(GameMsg msg)
     {
-        if(client.session != null)
+        if (client.session != null)
         {
             client.session.SendMsg(msg);
         }
@@ -60,10 +63,48 @@ public class NetSvc : MonoBehaviour
             InitSvc();
         }
     }
-
-    private void Update()
+    public void AddNetPkg(GameMsg msg)
     {
-   
+        lock (obj)
+        {
+            msgQue.Enqueue(msg);
+        }
+    }
+
+    public void Update()
+    {
+        if (msgQue.Count > 0)
+        {
+            lock (obj)
+            {
+                GameMsg msg = msgQue.Dequeue();
+                ProcessMsg(msg);
+            }
+        }
+    }
+
+    private void ProcessMsg(GameMsg msg)
+    {
+        if (msg.err != (int)ErrorCode.None)
+        {
+            switch ((ErrorCode)msg.err)
+            {
+                case ErrorCode.AcctIsOnline:
+                    GameRoot.AddTips("当前帐号已经上线");
+                    break;
+                case ErrorCode.WrongPass:
+                    GameRoot.AddTips("密码错误");
+                    break;
+            }
+            return;
+        }
+        switch ((CMD)msg.cmd)
+        {
+            case CMD.RsqLogin:
+                LoginSys.Instance.RspLogin(msg);
+                break;
+
+        }
     }
 
 }

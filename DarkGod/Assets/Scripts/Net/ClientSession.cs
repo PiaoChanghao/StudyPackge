@@ -23,6 +23,7 @@ public class ClientSession : PESession<GameMsg>
     protected override void OnReciveMsg(GameMsg msg)
     {
         PECommon.Log("Server Rsp:");
+        NetSvc.Instance.AddNetPkg(msg);
     }
 
     protected override void OnDisConnected()

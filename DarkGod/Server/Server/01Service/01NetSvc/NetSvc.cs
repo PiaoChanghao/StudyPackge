@@ -63,17 +63,18 @@ public class NetSvc
             PECommon.Log("PackCount:" + msgPackQue.Count);
             lock (obj)
             {
-                MsgPack msg = msgPackQue.Dequeue();
+                MsgPack pack = msgPackQue.Dequeue();
+                HandOutMsg(pack);
             }
         }
     }
 
-    private void HandOutMsg(GameMsg msg)
+    private void HandOutMsg(MsgPack pack)
     {
-        switch ((CMD)msg.cmd)
+        switch ((CMD)pack.msg.cmd)
         {
             case CMD.ReqLogin:
-                LoginSys.Instance.ReqLogin(msg);
+                LoginSys.Instance.ReqLogin(pack);
                 break;
         }
     }

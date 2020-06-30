@@ -15,7 +15,7 @@ namespace PEProtocol
     public class GameMsg : PEMsg
     {
         public ReqLogin reqLogin;
-
+        public RspLogin rspLogin;
 
     }
     
@@ -25,6 +25,35 @@ namespace PEProtocol
         public string acct;
         public string pass;
     }
+
+    [Serializable]
+    public class RspLogin
+    {
+        public PlayerData playerData;
+
+        //TODO
+    }
+
+    [Serializable]
+    public class PlayerData
+    {
+        public int id;
+        public string name;
+        public int lv;
+        public int exp;
+        public int power;
+        public int coin;
+        public int diamond;
+        //TOADD
+    }
+
+    public enum ErrorCode
+    {
+        None = 0,//没有错误
+        AcctIsOnline,//账号已经上线
+        WrongPass,//密码错误
+    }
+
 
     public enum CMD
     {

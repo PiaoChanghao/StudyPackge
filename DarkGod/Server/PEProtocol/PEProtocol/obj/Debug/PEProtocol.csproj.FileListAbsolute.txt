@@ -7,3 +7,4 @@ D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.dll
 D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.pdb
 D:\Unity\课程\DarkGod\Assets\Scripts\Net\PEProtocol.dll
 D:\Unity\课程\DarkGod\Assets\Scripts\Net\PEProtocol.pdb
+D:\Unity\课程\DarkGod\Server\PEProtocol\PEProtocol\obj\Debug\PEProtocol.csprojAssemblyReference.cache

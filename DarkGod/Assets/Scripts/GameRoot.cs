@@ -6,6 +6,7 @@
 	功能：游戏启动入口
 *****************************************************/
 
+using PEProtocol;
 using UnityEngine;
 
 public class GameRoot : MonoBehaviour 
@@ -57,9 +58,24 @@ public class GameRoot : MonoBehaviour
         login.EnterLogin();
     }
 
+    
+
     public static void AddTips(string tips)
     {
         Instance.dynamicWnd.AddTips(tips);
+    }
+
+    private PlayerData playerData = null;
+    public PlayerData PlayerData
+    {
+        get
+        {
+            return playerData;
+        }
+    }
+    public void SetPlayerData(RspLogin data)
+    {
+        playerData = data.playerData;
     }
 
 }

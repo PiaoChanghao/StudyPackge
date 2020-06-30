@@ -38,6 +38,7 @@
     <Compile Include="01Service\01NetSvc\NetSvc.cs" />
     <Compile Include="01Service\01NetSvc\ServerSession.cs" />
     <Compile Include="02System\01LoginSys\LoginSys.cs" />
+    <Compile Include="03Cache\CacheSvc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
